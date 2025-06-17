@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            background-color: rgba(0, 255, 255, 0.751);
+        }
+        .inner{
+            border: 2px solid gray;
+            border-radius: 20px;
+            height: 350px;
+            width: 300px;
+            background-color:lightcyan;
+        }
+        .inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px lightslategray;
+    }
+        .img{
+            display: flex;
+            justify-content: center;
+           
+
+            
+ }
+        .img img{
+            /* border-radius: 50%; */
+            clip-Path:circle(40%);
+            height: 200px;
+            width: 200px;
+            cursor: pointer;
+
+        
+    
+
+        }
+       
+        .text {
+     
+      text-align: center;
+    }
+
+    .text p:first-child {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #333;
+      text-transform: capitalize;
+    }
+
+    .text p:last-child {
+      font-size: 1em;
+      color: #777;
+    }
+    .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+
+    }
+    button{
+        border-radius: 20px;
+        height: 40px;
+        width: 100px;
+        text-transform: capitalize;
+        font-weight: bold;
+        background-color:black;
+        color: white;
+        cursor: pointer;
+
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+
+   
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="radha.png" alt="">
+            </div>
+            <div class="text">
+                <p>name:- radharani</p>
+                <p>BIO:-  bca complet</p>
+            </div>
+            <div class="btn">
+                <a href="#">
+                    <button>follow</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

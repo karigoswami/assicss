@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             font-family: Arial, sans-serif;
+        }
+        body{
+             padding: 20px;
+            background:linear-gradient(lightgray,black);
+            
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            flex-wrap: wrap;
+            overflow-x: hidden;
+            margin-left: 10px;
+           
+
+
+            
+        }
+        .main{
+            /* border: 2px solid; */
+            
+             border: 3px solid azure;
+            
+            border-radius: 20px;
+            display: grid;
+            height: 400px;
+            width: 300px;
+            overflow: hidden;
+            
+        }
+         .inner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgb(143, 143, 189);
+    }
+        .inner{
+             background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+        }
+        .img{
+             padding: 20px;
+            width: 100%;
+        }
+        .img img{
+            height: 300px;
+            width: 100%;
+            cursor: pointer;
+            
+        }
+        
+        .text {
+     
+      text-align: center;
+    }
+
+    .text p:first-child {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #333;
+      text-transform: capitalize;
+    }
+
+    .text p:last-child {
+      font-size: 1em;
+      color: #777;
+    }
+
+    .text del {
+      color: #999;
+    }
+
+    .text p:last-child::after {
+      content: " only!";
+      color: #e63946;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://i.pinimg.com/originals/bf/ba/b9/bfbab95030c2dc03e49df7c1a667260c.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>saree</p>
+                <p><del>300  </del>&nbsp;&nbsp;&#8377;200</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://img.theloom.in/blog/wp-content/uploads/2023/09/14-03-23-918-e1695289116121.png" alt="">
+            </div>
+            <div class="text">
+                <p>kurti</p>
+                <p><del>400  </del>&nbsp;&nbsp;&#8377;350</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://blfabric.com/cdn/shop/products/137263391_429067618218378_320129923705734233_n.jpg?v=1627335671&width=600" alt="">
+            </div>
+            <div class="text">
+                <p>lehnga</p>
+                <p><del>2000  </del>&nbsp;&nbsp;&#8377;1200</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://images.meesho.com/images/products/74406024/l00ty_512.webp" alt="">
+            </div>
+            <div class="text">
+                <p>jins</p>
+                <p><del>300  </del>&nbsp;&nbsp;&#8377;200</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://www.globalrepublic.in/cdn/shop/products/1_1_4dd0fada-391b-4cd5-8acc-c226b729d78c.jpg?v=1677157871" alt="">
+            </div>
+            <div class="text">
+                <p>t-shirt</p>
+                <p><del>400  </del>&nbsp;&nbsp;&#8377;300</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="img">
+                <img src="https://i.pinimg.com/736x/3a/1b/67/3a1b678364a084205282595126a9b378.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>frok</p>
+                <p><del>500  </del>&nbsp;&nbsp;&#8377;450</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

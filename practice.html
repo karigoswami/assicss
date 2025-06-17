@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background:linear-gradient(135deg, #1e3c72, #2a5298); ;
+            padding: 100px;
+            overflow: hidden;
+        }
+        .main{
+            position: relative;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+           
+            width: 400px;
+            background-color:rgba(0, 0, 0, 0.7) ;
+             box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+            border-radius: 20px;
+            transition: 0.5s;
+            overflow: hidden;
+        
+        }
+        .main:hover{
+            transform: scale(1.05);
+        }
+       .main::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(0deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+        .h1{
+            display: flex;
+            justify-content: center;
+            color:white;
+            padding: 20px;
+        }
+        
+        .input{
+           
+            display: flex;
+            justify-content: center;
+           flex-direction: column;
+            color: white;
+
+        }
+        input[type="text"]{
+             width: 300px;
+             height: 50px;
+             border-radius: 15px;
+             padding: 20px;
+
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn button{
+            padding: 10px;
+             width: 300px;
+             height: 50px;
+             border-radius: 15px;
+             text-align: center;
+             background-color: #45f3ff;
+             cursor: pointer;
+        }
+        .btn button:hover{
+              box-shadow: 0 0 10px #45f3ff, 0 0 100px #45f3ff;
+
+        }
+        .first {
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .first a{
+            color:#aaa;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+    
+        }
+        .first a.sign {
+            color: #f44336;
+            text-decoration: none;
+        }
+        .first a.sign:hover {
+    color: #ff7961;
+}
+        .label{
+            position: relative;
+            padding: 10px;
+        }
+        label{
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            color: black;
+        }
+         /* .label input:focus + label,.label input:not(:placeholder-shown)+label{
+            top: -10px;
+            left: 0px;
+            color:white;
+            padding-left: 20px;
+
+        } */
+         .label input:focus + label ,.label input:not(:placeholder-shown)+label{
+            top: -10px;
+            left:0px;
+            color: white;
+            padding-left: 20px;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="h1">
+                <h1>login form</h1></div>
+           
+                <div class="input">
+                    <div class="label">
+                    <input type="text" required placeholder="">
+                    <label for="">username</label></div>
+                    <div class="label">
+                    <input type="text" required placeholder="">
+                    <label for="">password</label>
+                    </div>
+        </div>
+                <div class="btn">
+                <a href="#">
+                    <button>login</button>
+                </a></div>
+                <div class="first">
+                    <a href="#">Forgot Password ?</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="sign" href="#">Sign up</a>
+                </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>

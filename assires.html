@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    li{
+      list-style: none;
+
+    }
+    a{
+      text-decoration: none;
+      color:yellow;
+      text-transform: capitalize;
+      
+    }
+    a:hover{
+      color: rgb(230, 230, 150);
+    }
+    button{
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color:yellowgreen;
+    }
+    button:hover{
+      background-color: rgb(207, 230, 161);
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Main Content */
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 20px;
+    }
+
+    /* Responsive Media Query */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 10px;
+      }
+      nav{
+      flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+       gap: 20px;
+       font-weight: bold;
+        /* text-align: center; */
+        background-color:rgb(92, 87, 87);
+      }
+      button{
+        width: 100%;
+      }
+      .logo{
+        color: yellow;
+      }
+     
+
+      .column {
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      nav h1, footer {
+        font-size: 18px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Responsive</div>
+   <li><a href="#">home</a></li>
+   <li><a href="#">about</a></li>
+   <li><a href="#">contact</a></li>
+   <button>
+    Responsive
+   </button>
+  </nav>
+
+  <div class="container">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, nunc at tempus iaculis, libero arcu consequat odio, nec congue ligula velit in lorem.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Curabitur pulvinar, sapien a suscipit congue, erat augue feugiat metus, ut bibendum ex metus nec nulla. In hac habitasse platea dictumst.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Responsive Site
+  </footer>
+
+</body>
+</html>
